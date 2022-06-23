@@ -7,40 +7,40 @@ postMerge :
       
   
   subModules:          #Not to be changed
-      
+    
         
-      - name: frontend      
-        path : "./"
-        pattern: 
-          - "./test/frontend.spec.js"
-        
-        framework : jest
-        runPreRunEveryTime: true
-        preRun:
-          env:
-            TEST_FRONTEND: 1
-          command:
-            - node test/prepare-jest.js
-            
-        
-        configFile : "./config/jest-frontend.config.js"
-        
-      - name: backend      
-        path : "./"
-        pattern: 
-          - "./test/backend.spec.js"
-        
-        framework : jest
-        runPreRunEveryTime: true
-        preRun:
-          env:
-            TEST_BACKEND: 1
-          command:
-            - node test/prepare-jest.js
-            
-        
-        configFile : "./config/jest-backend.config.js"  
-      
+    - name: frontend      
+      path : "./"
+      pattern: 
+        - "./test/frontend.spec.js"
+
+      framework : jest
+      runPreRunEveryTime: true
+      preRun:
+        env:
+          TEST_FRONTEND: 1
+        command:
+          - node test/prepare-jest.js
+
+
+      configFile : "./config/jest-frontend.config.js"
+
+    - name: backend      
+      path : "./"
+      pattern: 
+        - "./test/backend.spec.js"
+
+      framework : jest
+      runPreRunEveryTime: true
+      preRun:
+        env:
+          TEST_BACKEND: 1
+        command:
+          - node test/prepare-jest.js
+
+
+      configFile : "./config/jest-backend.config.js"  
+
         
       
         
@@ -48,38 +48,38 @@ preMerge :
   
   subModules:          #Not to be changed
   
-     - name: frontend      
-        path : "./"
-        pattern: 
-          - "./test/frontend.spec.js"
-        
-        framework : jest
-        runPreRunEveryTime: true
-        preRun:
-          env:
-            TEST_FRONTEND: 1
-          command:
-            - node test/prepare-jest.js
-            
-        
-        configFile : "./config/jest-frontend.config.js"
-        
-      - name: backend      
-        path : "./"
-        pattern: 
-          - "./test/backend.spec.js"
-        
-        framework : jest
-        runPreRunEveryTime: true
-        preRun:
-          env:
-            TEST_BACKEND: 1
-          command:
-            - node test/prepare-jest.js
-            
-        
-        configFile : "./config/jest-backend.config.js"  
-        
+    - name: frontend      
+      path : "./"
+      pattern: 
+        - "./test/frontend.spec.js"
+
+      framework : jest
+      runPreRunEveryTime: true
+      preRun:
+        env:
+          TEST_FRONTEND: 1
+        command:
+          - node test/prepare-jest.js
+
+
+      configFile : "./config/jest-frontend.config.js"
+
+    - name: backend      
+      path : "./"
+      pattern: 
+        - "./test/backend.spec.js"
+
+      framework : jest
+      runPreRunEveryTime: true
+      preRun:
+        env:
+          TEST_BACKEND: 1
+        command:
+          - node test/prepare-jest.js
+
+
+      configFile : "./config/jest-backend.config.js"  
+
   
-version : 2.0
+version : 2.0.1
 nodeVersion : 17.3.1
