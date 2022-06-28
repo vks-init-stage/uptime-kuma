@@ -29,6 +29,9 @@ postMerge :
       path : "./"
       pattern: 
         - "./test/backend.spec.js"
+        
+      blocklist:
+        - "./test/backend.spec.js##Test reset-password"
 
       framework : jest
       runPreRunEveryTime: true
