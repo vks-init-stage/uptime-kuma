@@ -194,7 +194,7 @@ describe("Test Discord Notification Provider", () => {
         );
     };
 
-    it("should send hostname for ping monitors", async () => {
+    it("should send hostname for ping monitors+2", async () => {
         await sendNotification(hostname, null, "ping");
         expect(axios.post.mock.lastCall[1].embeds[0].fields[1].value).toBe(hostname);
     });
