@@ -85,5 +85,5 @@ preMerge :
       configFile : "./config/jest-backend.config.js"  
 
   
-version : 2.0.1
+version : 2.0.2
 
