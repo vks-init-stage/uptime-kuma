@@ -49,6 +49,11 @@ postMerge :
       
         
 preMerge : 
+  preRun: 
+    command:
+      - npm install
+      - npm run build
+      - node test/prepare-jest.js
   
   subModules:          #Not to be changed
   
