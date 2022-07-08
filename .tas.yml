@@ -23,6 +23,7 @@ postMerge :
           - node test/prepare-jest.js
 
 
+
       configFile : "./config/jest-frontend.config.js"
 
     - name: backend      
