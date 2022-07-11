@@ -7,6 +7,7 @@ global.navigator = {
 const { currentLocale } = require("../src/i18n");
 
 describe("Test i18n.js", () => {
+    
 
     it("currentLocale()", () => {
         expect(currentLocale()).toEqual("en");
