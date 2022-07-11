@@ -13,6 +13,7 @@ describe("Test parseCertificateInfo", () => {
     }, 5000);
 
     
+    
     it("should handle normal cert chain", async () => {
         const parseCertificateInfo = utilServerRewire.__get__("parseCertificateInfo");
 
